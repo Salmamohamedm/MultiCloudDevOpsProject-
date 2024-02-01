@@ -84,7 +84,11 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 This Ansible playbook automates the deployment and configuration of Jenkins, SonarQube, and Docker on an EC2 instance. The playbook uses dynamic inventory for seamless integration with cloud environments.
 
 #   Overview
-  - [Jenkins Role:]() Installs and configures Jenkins for continuous integration and automation.
-  - SonarQube Role: Sets up SonarQube for code quality analysis.
-  - Docker Role: Installs and configures Docker for containerized deployments
+  - [Jenkins Role:](ansible_project/Jenkins/tasks)
+     - Installs and configures Jenkins for continuous integration and automation.
+  - [SonarQube Role:](ansible_project/SonarQube/tasks)
+      - Sets up SonarQube for code quality analysis.
+  - [Docker Role:](ansible_project/docker/tasks)
+       -  Installs and configures Docker for containerized deployments.
+    
 
