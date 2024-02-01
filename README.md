@@ -38,9 +38,10 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 
 5. [VPC Module](Terraform-Project/modules/vpc)
     - Purpose: Provision a Virtual Private Cloud (VPC)
+      
        ![Screenshot (393)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/8e78d5bc-31c4-4b10-951f-e0a36a27ee9c)
       
+ 6. [internet-gateway Module](Terraform-Project/modules/internet-gateway)    
+      
+    ![Screenshot (395)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/cf35333d-3675-4ce3-b1b2-856dc85418d7)
 
-    
-     
- 
