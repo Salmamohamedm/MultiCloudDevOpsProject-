@@ -166,8 +166,11 @@ This document aims to provide a straightforward overview of how to use Ansible t
 5. configure SonarQube in Jenkins:
 Navigate to "Manage Jenkins" > "Configure System."
 In the "SonarQube Servers" section, add your SonarQube server details.
+![Screenshot (498)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/55c53325-634d-4a60-b9ba-4b85edeed21d)
 
-6. Add credntials
+
+
+7. Add credntials
    ![Screenshot (447)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/ad03e1b5-f484-4921-b1d7-8f8737c599a8)
    ![Screenshot (445)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/b87dea9d-ca50-4178-872b-a107bc8e11e6)
    ![Screenshot (467)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/441e2408-a730-4f3f-9843-7208d53c3658)
