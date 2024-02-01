@@ -83,7 +83,11 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 
   ``` 
   terraform destroy
-  ``` 
+  ```
+  ![Screenshot (404)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/f1cb68fe-de91-4424-8591-365bb3ba0b6e)
+
+
+
 
 #   Configuration Management with Ansible 
 This Ansible playbook automates the deployment and configuration of Jenkins, SonarQube, and Docker on an EC2 instance. The playbook uses dynamic inventory for seamless integration with cloud environments.
