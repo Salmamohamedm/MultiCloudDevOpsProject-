@@ -10,7 +10,7 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 
  - Prerequisites
  - Infrastructure Provisioning with Terraform
- - Configuration Management with Ansible
+ - Configuration Management with Ansible   
  - Jenkins Pipeline
  - OpenShift Deployment
  - Monitoring and Logging OpenShift Cluster
@@ -80,5 +80,11 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 4. Destroy the infrastructure
  - terraform destroy
 
-#    
+#   Configuration Management with Ansible 
+This Ansible playbook automates the deployment and configuration of Jenkins, SonarQube, and Docker on an EC2 instance. The playbook uses dynamic inventory for seamless integration with cloud environments.
+
+#   Overview
+  - [Jenkins Role:]() Installs and configures Jenkins for continuous integration and automation.
+  - SonarQube Role: Sets up SonarQube for code quality analysis.
+  - Docker Role: Installs and configures Docker for containerized deployments
 
