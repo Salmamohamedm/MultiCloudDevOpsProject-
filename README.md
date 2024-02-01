@@ -48,10 +48,16 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
       
     ![Screenshot (395)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/cf35333d-3675-4ce3-b1b2-856dc85418d7)
 
- 7.   [route-table](Terraform-Project/modules/route-table)
+ 7.   [route-table Module](Terraform-Project/modules/route-table)
 
       ![Screenshot (392)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/ecad7f84-e799-4f0d-98b8-6075a7442ec9)
 
- 8.      
+ 8. [security-group Module ](Terraform-Project/modules/security-group)
+
+    ![Screenshot (396)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/377b16f0-daa2-4b07-abf2-f75c1dff7b4f)
+
+    10. [Ec2 Module](Terraform-Project/modules/ec2)
+
+     ![Screenshot (493)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/7c229335-79bb-4934-9c20-4e96797c0fda)
 
 
