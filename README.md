@@ -250,4 +250,35 @@ This document introduces the Logging Operator, a Golang-based tool designed to s
 9. Verify Installation:
   - Switch to the "Operators" → "Installed Operators" page.
   - In the Status column, confirm you see green checkmarks with "InstallSucceeded" and the text "Up to date."
-  
+
+
+
+
+
+#  steps 
+ 1. Step 1: Deploy Elasticsearch
+  - Create a Project for Logging:
+  ```
+ oc new-project logging
+  ```
+   2. Deploy Elasticsearch:
+  - Use an Elasticsearch Operator or deploy it directly. Here's an example using the Elasticsearch Operator:
+   ``` 
+    oc apply -f https://download.elastic.co/downloads/eck/1.7.1/all-in-one.yaml
+   ```
+  3. Check Elasticsearch Deployment Status:
+   - Ensure the Elasticsearch pods are running successfully:
+       
+   ```
+    oc get pods -n logging
+   ```
+4. Step 3: Deploy Kibana for Visualization
+    - Deploy Kibana:
+     ```
+      oc apply -f https://download.elastic.co/downloads/eck/1.7.1/kibana-all-in-one.yaml
+     ```
+   5. Access Kibana Dashboard:
+ ```
+ oc get route -n logging
+```
+
