@@ -1,0 +1,53 @@
+@Library('Shared Library Jenkins') _
+
+pipeline {
+    agent any
+
+    environment {
+        DOCKER_REGISTRY = "salmamakram"
+        DOCKER_IMAGE = "spring-boot"
+        imageTagApp = "build-${BUILD_NUMBER}-app"
+        imageNameapp = "${DOCKER_REGISTRY}:${imageTagApp}"
+        OPENSHIFT_PROJECT = 'salmamakram'
+        GITHUB_REPO = "Salmamohamedm/MultiCloudDevOpsProject"
+        OPENSHIFT_SERVER = 'https://api.occpuat.devopsconsulting.org:6443'
+        APP_SERVICE_NAME = 'springboot1'
+        APP_PORT = '8080'
+        APP_HOST_NAME = 'springboot1.apps.occpuat.devopsconsulting.org'
+        SONAR_PROJECT_KEY = 'CloudDevOpsProject'
+        SONAR_SERVER_URL = 'http://44.210.126.194:9000'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: "https://github.com/${GITHUB_REPO}.git", branch: 'main'
+            }
+        }
+
+        stage('Build Docker image and push to Docker Hub') {
+            steps {
+                script {
+                    dockerBuildAndPush(imageNameapp, DOCKER_REGISTRY, imageTagApp)
+                }
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                script {
+                    sonarQubeAnalysis(SONAR_PROJECT_KEY, SONAR_SERVER_URL, SONAR_TOKEN)
+                }
+            }
+        }
+
+        stage('Deploy to OpenShift') {
+            steps {
+                script {
+                    deployToOpenShift(OPENSHIFT_SECRET, OPENSHIFT_SERVER, OPENSHIFT_PROJECT,
+                                     APP_SERVICE_NAME, imageNameapp, APP_PORT)
+                }
+            }
+        }
+    }
+}
