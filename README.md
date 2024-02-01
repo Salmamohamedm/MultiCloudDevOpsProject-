@@ -80,5 +80,5 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 4. Destroy the infrastructure
  - terraform destroy
 
-   
+#    
 
