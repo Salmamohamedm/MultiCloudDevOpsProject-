@@ -31,7 +31,7 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
     - Purpose: Set variables that need to be defined in terraform.tfvar file.
 3.   [terraform.tfvars](Terraform-Project/terraform.tfvars)
      - Purpose: Define values for the needed variables.
-4. [backend.tfvars](Terraform-Project/terraform.tfvars)   
+4. [Remote-backand](Terraform-Project/)   
 
      
     
