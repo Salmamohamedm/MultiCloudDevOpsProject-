@@ -147,7 +147,26 @@ ansible-playbook -i inventory your_playbook.yml
 
 ![Screenshot (465)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/9c880287-dcff-4b2e-92db-2628301476fb)
 
-#   
+#   Jenkins Pipeline
+This document aims to provide a straightforward overview of how to use Ansible to automate the installation and configuration of Jenkins, SonarQube, and Docker on an EC2 instance. By following these steps, you can streamline the process of getting these tools up and running efficiently.
+
+#   overview
+
+  1. Create Shared Library Repository:
+      - Create a Git repository for your Jenkins shared library.
+   2. Define Shared Library Logic:
+      - Inside the vars directory of your shared library, create a file (e.g., openshiftPipeline.groovy) with the logic for OpenShift deployment automation.
+   3. Commit and Push:
+       - Commit your changes and push them to the shared library reposit
+
+![Screenshot (433)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/9050a467-ec31-4f8c-b1b0-18e4f67e2770)
+![Screenshot (437)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/0bacdc66-3970-4004-aab8-7dc624b1e99b)
+![Screenshot (443)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/66f88745-6ade-4cfc-9d15-b07c4b8eb96a)
+
+
+
+
+
 
 
 
