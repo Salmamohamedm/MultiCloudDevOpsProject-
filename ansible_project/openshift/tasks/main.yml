@@ -1,43 +1,37 @@
 ---
-- name: Uninstalling older versions and dependencies.
-  yum:
-    name:
-    - docker
-    - docker-client
-    - docker-client-latest
-    - docker-common
-    - docker-latest
-    - docker-latest-logrotate
-    - docker-logrotate
-    - docker-engine
-    state: absent
+- name: Install OpenShift Client on Red Hat
+  hosts: aws_ec2
+  become: true  # Run tasks with elevated privileges (sudo)
 
-- name: Install yum-utils
-  yum:
-    name: yum-utils
-    state: present
+  tasks:
+    - name: Download OpenShift client
+      ansible.builtin.get_url:
+        url: https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/4.10.1/openshift-client-linux.tar.gz
+        dest: /tmp/openshift-client-linux.tar.gz
 
-- name: Add Docker repository
-  command: "sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo"
+    - name: Extract OpenShift client on the remote host
+      ansible.builtin.command:
+        cmd: "tar -zxvf /tmp/openshift-client-linux.tar.gz -C /tmp"
+        executable: /bin/bash
 
-- name: Install dependencies
-  yum:
-    name:
-    - docker-ce
-    - docker-ce-cli
-    - containerd.io
-    - docker-buildx-plugin
-    - docker-compose-plugin
-    state: present
+    - name: Show the contents of /tmp directory on the remote host
+      ansible.builtin.command:
+        cmd: "ls -l /tmp"
+        executable: /bin/bash
+      register: ls_output
 
+    - debug:
+        var: ls_output.stdout_lines
 
-- name: Start Docker service
-  service:
-    name: docker
-    state: started
+    - name: Copy oc to Ansible controller
+      ansible.builtin.fetch:
+        src: "/tmp/oc"
+        dest: "/tmp/"
+        flat: yes
 
-- name: Enable Docker service
-  service:
-    name: docker
-    enabled: true
+    - name: Copy oc to /usr/local/bin on Ansible controller
+      ansible.builtin.copy:
+        src: "/tmp/oc"
+        dest: "/usr/local/bin/"
+        mode: '0755'
 
