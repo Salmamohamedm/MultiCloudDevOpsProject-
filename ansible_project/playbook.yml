@@ -1,0 +1,17 @@
+---
+- name: Install Nginx
+  hosts: aws_ec2
+  become: yes  # Run tasks with sudo privileges
+
+  tasks:
+    - name: Install Nginx
+      package:
+        name: nginx
+        state: present
+
+    - name: Start Nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
