@@ -261,7 +261,7 @@ This document introduces the Logging Operator, a Golang-based tool designed to s
   ```
  oc new-project logging
   ```
-   2. Deploy Elasticsearch:
+  2. Deploy Elasticsearch:
   - Use an Elasticsearch Operator or deploy it directly. Here's an example using the Elasticsearch Operator:
    ``` 
     oc apply -f https://download.elastic.co/downloads/eck/1.7.1/all-in-one.yaml
@@ -272,13 +272,19 @@ This document introduces the Logging Operator, a Golang-based tool designed to s
    ```
     oc get pods -n logging
    ```
-4. Step 3: Deploy Kibana for Visualization
+  4. Step 3: Deploy Kibana for Visualization
     - Deploy Kibana:
-     ```
-      oc apply -f https://download.elastic.co/downloads/eck/1.7.1/kibana-all-in-one.yaml
-     ```
-   5. Access Kibana Dashboard:
- ```
- oc get route -n logging
-```
+   ```
+    oc apply -f https://download.elastic.co/downloads/eck/1.7.1/kibana-all-in-one.yaml
+   ```
+  5. Access Kibana Dashboard:
+   ```
+   oc get route -n logging
+   ```
+  6. Step 4: Configure Fluentd to Forward Container Logs
+   - update Fluentd ConfigMap:
+   ```
+    oc edit configmap/fluentd -n logging
+   ```
 
+     
