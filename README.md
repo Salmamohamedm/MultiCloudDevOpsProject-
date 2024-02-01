@@ -163,6 +163,15 @@ This document aims to provide a straightforward overview of how to use Ansible t
 ![Screenshot (437)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/0bacdc66-3970-4004-aab8-7dc624b1e99b)
 ![Screenshot (443)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/66f88745-6ade-4cfc-9d15-b07c4b8eb96a)
 
+5. configure SonarQube in Jenkins:
+Navigate to "Manage Jenkins" > "Configure System."
+In the "SonarQube Servers" section, add your SonarQube server details.
+
+6. Add credntials
+   ![Screenshot (447)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/ad03e1b5-f484-4921-b1d7-8f8737c599a8)
+   ![Screenshot (445)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/b87dea9d-ca50-4178-872b-a107bc8e11e6)
+   ![Screenshot (467)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/441e2408-a730-4f3f-9843-7208d53c3658)
+
 
 
 
@@ -182,3 +191,5 @@ the deployment of a Java web application on OpenShift, highlighting a streamline
 
 
 ![Screenshot (494)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/f757ad2c-6b8b-4aaf-b9d1-8d4aa6604652)
+![Screenshot (497)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/2c782887-d8bd-415b-b316-89aec7c1bd3e)
+
