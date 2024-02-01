@@ -95,10 +95,54 @@ This Ansible playbook automates the deployment and configuration of Jenkins, Son
       - Sets up SonarQube for code quality analysis.
   - [Docker Role:](ansible_project/docker/tasks)
        -  Installs and configures Docker for containerized deployments.
+
+  - Dynamic Inventory
+    The playbook utilizes dynamic inventory for automatic discovery of EC2 instances. This eliminates the need for manually maintaining inventory files. The ec2.py and ec2.ini files in 
+    the inventory directory facilitate dynamic inventory management.
+    
     #   Prerequisites
       - Ansible installed on the control machine.
       - AWS credentials configured for EC2 instance provisioning.
-                
-```
+     #   usage
 
+1.  To initialize a new Ansible role using ansible-galaxy        
+```
+ansible-galaxy init <role_name>
 ````
+2.Navigate to the playbook directory
+```
+cd path/to/playbooks
+```
+3.Update the inventory file with your EC2 instance details
+
+4. This command will generate a visual representation of the inventory structure based on the information in your AWS EC2 inventory file (aws_ec2.yaml)
+ ```
+ansible-inventory -i aws_ec2.yaml --graph
+```
+  ![,m](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/636fbba8-7fd4-43d9-a48d-434ea674cd80)
+
+
+
+5. using SSH (Secure Shell) to connect to an Amazon EC2 (Elastic Compute Cloud) instance
+```
+ssh -i "your-key.pem" ec2-user@your-instance-ip
+```
+6.Execute the playbook
+```
+ansible-playbook -i inventory your_playbook.yml
+```
+![Screenshot (418)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/3e308517-2df8-4db4-8cb6-9d22ff0b0921)
+
+7.Ensure EC2 instance is configured as expected
+
+
+![Screenshot (496)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/40c2dfd6-b924-4f1d-a337-d98324945c3a)
+
+
+
+
+![Screenshot (465)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/9c880287-dcff-4b2e-92db-2628301476fb)
+
+
+
+
