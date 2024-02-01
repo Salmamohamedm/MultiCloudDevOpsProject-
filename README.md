@@ -26,4 +26,11 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
  This document provides comprehensive instructions for deploying infrastructure using Terraform. The project encompasses  modules: vpc, subnet, ec2, internetgetway, security group, route table . The objective is to establish an environment comprising network infrastructure with subnet, Internet Gateway, and route table an EC2 instance for running Jenkins and SonarQube, and CloudWatch for monitoring with alarms .
  #   overview 
 1. [main.tf](Terraform-Project/main.tf)
+   - Purpose: Define the cloud provider, Call terraform modules.
+2. [variables.tf](Terraform-Project/main.tf)
+    - Purpose: Set variables that need to be defined in terraform.tfvar file.
+3.   [terraform.tfvars]{Terraform-Project/terraform.tfvars}
+    - Purpose: Define values for the needed variables.
+   4.[Remote Backend](Terraform-Project/backend.tf)
+     -
  
