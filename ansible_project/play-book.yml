@@ -2,8 +2,10 @@
 - hosts: aws_ec2
   become: yes
   roles:
-   # - java
+    - Git
+    - java
     - jenkins
     - docker
     - sonarqube
+    - openshift
 
