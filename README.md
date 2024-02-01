@@ -56,8 +56,29 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 
     ![Screenshot (396)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/377b16f0-daa2-4b07-abf2-f75c1dff7b4f)
 
-    10. [Ec2 Module](Terraform-Project/modules/ec2)
+    9. [Ec2 Module](Terraform-Project/modules/ec2-instances)
+  
 
      ![Screenshot (493)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/7c229335-79bb-4934-9c20-4e96797c0fda)
 
+10. [CloudWatch Module](Terraform-Project/modules)
+
+
+  ![Screenshot (488)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/3b7ad4de-2359-4471-9d66-3145a959d6cb)
+
+ 
+  ![Screenshot (490)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/64341d0e-b63d-4133-bd37-6ca17c365589)
+
+
+#   Usage
+1. Update values in [terraform.tfvars](Terraform-Project/terraform.tfvars)
+2. Initialize plan and apply Terraform configurations:
+ - terraform init
+ - terraform plan
+ - terraform apply
+3. Follow on-screen prompts to provision infrastructure
+4. Destroy the infrastructure
+ - terraform destroy
+
+   
 
