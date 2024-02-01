@@ -73,12 +73,17 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 #   Usage
 1. Update values in [terraform.tfvars](Terraform-Project/terraform.tfvars)
 2. Initialize plan and apply Terraform configurations:
- - terraform init
- - terraform plan
- - terraform apply
-3. Follow on-screen prompts to provision infrastructure
+ ```
+ terraform init     
+ terraform plan
+ terraform apply
+ ```
+3 . Follow on-screen prompts to provision infrastructure
 4. Destroy the infrastructure
- - terraform destroy
+
+  ``` 
+  terraform destroy
+  ``` 
 
 #   Configuration Management with Ansible 
 This Ansible playbook automates the deployment and configuration of Jenkins, SonarQube, and Docker on an EC2 instance. The playbook uses dynamic inventory for seamless integration with cloud environments.
@@ -90,5 +95,10 @@ This Ansible playbook automates the deployment and configuration of Jenkins, Son
       - Sets up SonarQube for code quality analysis.
   - [Docker Role:](ansible_project/docker/tasks)
        -  Installs and configures Docker for containerized deployments.
-    
+    #   Prerequisites
+      - Ansible installed on the control machine.
+      - AWS credentials configured for EC2 instance provisioning.
+                
+```
 
+````
