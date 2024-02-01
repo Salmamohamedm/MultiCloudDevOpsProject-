@@ -147,6 +147,16 @@ ansible-playbook -i inventory your_playbook.yml
 
 ![Screenshot (465)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/9c880287-dcff-4b2e-92db-2628301476fb)
 
+#   
+
+
+
+
+
+
+
+
+
 
 #  OpenShift Deployment
 the deployment of a Java web application on OpenShift, highlighting a streamlined process that covers essential aspects such as deployment configuration for seamless scalability, the creation of an internal service to foster communication within the cluster, implementation of network policies to bolster security, configuration of routes for external accessibility.
