@@ -39,27 +39,27 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 5. [VPC Module](Terraform-Project/modules/vpc)
     - Purpose: Provision a Virtual Private Cloud (VPC)
       
-       ![Screenshot (393)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/8e78d5bc-31c4-4b10-951f-e0a36a27ee9c)
+      ![Screenshot (393)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/8e78d5bc-31c4-4b10-951f-e0a36a27ee9c)
       ![Screenshot (394)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/e32ba505-1c5b-4b28-823a-93232a4a0ef0)
       ![Screenshot (399)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/17b6772a-dd13-4e98-a4d9-13a69f92b350)
 
       
  6. [internet-gateway Module](Terraform-Project/modules/internet-gateway)    
       
-    ![Screenshot (395)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/cf35333d-3675-4ce3-b1b2-856dc85418d7)
+     ![Screenshot (395)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/cf35333d-3675-4ce3-b1b2-856dc85418d7)
 
- 7.   [route-table Module](Terraform-Project/modules/route-table)
+ 7.  [route-table Module](Terraform-Project/modules/route-table)
 
-      ![Screenshot (392)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/ecad7f84-e799-4f0d-98b8-6075a7442ec9)
+     ![Screenshot (392)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/ecad7f84-e799-4f0d-98b8-6075a7442ec9)
 
  8. [security-group Module ](Terraform-Project/modules/security-group)
 
     ![Screenshot (396)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/377b16f0-daa2-4b07-abf2-f75c1dff7b4f)
 
-    9. [Ec2 Module](Terraform-Project/modules/ec2-instances)
+9. [Ec2 Module](Terraform-Project/modules/ec2-instances)
   
 
-     ![Screenshot (493)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/7c229335-79bb-4934-9c20-4e96797c0fda)
+  ![Screenshot (493)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/7c229335-79bb-4934-9c20-4e96797c0fda)
 
 10. [CloudWatch Module](Terraform-Project/modules)
 
@@ -196,3 +196,58 @@ the deployment of a Java web application on OpenShift, highlighting a streamline
 ![Screenshot (494)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/f757ad2c-6b8b-4aaf-b9d1-8d4aa6604652)
 ![Screenshot (497)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/2c782887-d8bd-415b-b316-89aec7c1bd3e)
 
+
+#  Monitoring and Logging OpenShift Cluster
+This document introduces the Logging Operator, a Golang-based tool designed to streamline the orchestration of EFK (Elasticsearch, Fluentd, and Kibana) clusters in Kubernetes and OpenShift environments. The Logging Operator serves as an efficient manager for each component of the EFK stack, simplifying the deployment and maintenance processes in containerized environments.
+#  Overview:
+- Logging Operator.
+- Written in Golang.
+-  Purpose-built for orchestrating EFK clusters.
+#  Use Cases:
+- LogginIdeal for managing EFK clusters efficiently.
+- Containerized Deployment.
+
+
+ #  Prerequisites:
+ - You have administrator permissions.
+ - You have access to the OpenShift Container Platform web console.
+#  Procedure:
+ #  Navigate to OperatorHub:
+
+  - Log in to the OpenShift Container Platform web console.
+  - Click on "Operators" in the left sidebar, then select "OperatorHub."
+ 1.  Search for OpenShift Logging:
+
+  - In the "Filter by keyword" box, type "OpenShift Logging."
+ 2. Choose and Install:
+
+   - Select "Red Hat OpenShift Logging" from the list of available Operators.
+   - Click the "Install" button.
+  
+ 3. Configure Installation:
+
+   - Ensure that "A specific namespace on the cluster" is selected under "Installation mode."
+   - Set "Operator recommended namespace" to "openshift-logging."
+   - Enable "Enable operator recommended cluster monitoring on this namespace."
+   - This sets the openshift.io/cluster-monitoring: "true" label in the Namespace object.
+
+  4.  Select Update Channel:
+
+  - Choose "stable-5.y" as the Update channel.
+  - Note: The stable channel provides updates to the most recent release.
+    
+
+  5. Choose Update Approval:
+  - Select either "Automatic" or "Manual" for the Update approval strategy.
+  - Automatic updates the Operator when a new version is available.
+  - Manual requires manual approval for Operator updates.
+ 6. Console Plugin Configuration:
+  - Choose to "Enable" or "Disable" the Console plugin.
+
+7. Click Install:
+ - Click the "Install" button to initiate the installation.
+8. Verification:
+9. Verify Installation:
+  - Switch to the "Operators" → "Installed Operators" page.
+  - In the Status column, confirm you see green checkmarks with "InstallSucceeded" and the text "Up to date."
+  
