@@ -1,5 +1,5 @@
 #    Multi-cloud-devops-project
-  Comprehensive documentation for deploying a Java web app on OpenShift using Terraform, Ansible, Jenkins, and more.
+  A thorough guide for deploying a Java web application on OpenShift, employing Terraform for infrastructure, Ansible for configuration, Jenkins for CI/CD, Docker for containerization, SonarQube for code quality, and harnessing OpenShift for efficient container orchestration.
 
   #    Overview
     
