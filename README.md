@@ -189,9 +189,10 @@ In the "SonarQube Servers" section, add your SonarQube server details.
 
 
 7. Add credntials
-   ![Screenshot (447)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/ad03e1b5-f484-4921-b1d7-8f8737c599a8)
    ![Screenshot (445)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/b87dea9d-ca50-4178-872b-a107bc8e11e6)
+   ![Screenshot (447)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/ad03e1b5-f484-4921-b1d7-8f8737c599a8)
    ![Screenshot (467)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/441e2408-a730-4f3f-9843-7208d53c3658)
+   
 
 
 
