@@ -11,7 +11,7 @@ availability_zones = "us-east-1"
 //vpc_id   ="0
 
 aws_region  = "us-east-1"
-ami_id      = "ami-0123456789abcdef0"
+ami_id      = "ami-0fe630eb857a6ec83"
 instance_type = "t2.xlarge"
 key_name    = "my instance"
 subnet_id   = "subnet-0123456789abcdef0"
