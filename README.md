@@ -97,8 +97,7 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
  terraform plan
  terraform apply
  ```
-3 . Follow on-screen prompts to provision infrastructure
-4. Destroy the infrastructure
+3. Destroy the infrastructure
 
   ``` 
   terraform destroy
