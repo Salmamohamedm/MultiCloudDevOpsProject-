@@ -3,21 +3,23 @@
 
   #    Overview
     
-This project is all about making it easy to deploy a Java web application on an OpenShift cluster. We've got a plan in place that involves a few key steps.
+- This project is all about making it easy to deploy a Java web application on an OpenShift cluster. We've got a plan in place that involves a few key steps.
 
-First, we use Terraform to set up the basic infrastructure. Think of it as creating the foundation for our application on services like AWS.
+   - First, we use Terraform to set up the basic infrastructure. Think of it as creating the foundation for our application on services like AWS.
 
-Next, we use Ansible to manage the configuration, making sure everything is set up just right for our application to run smoothly.
+  - Next, we use Ansible to manage the configuration, making sure everything is set up just right for our application to run smoothly.
 
-Then, we bring in Jenkins to handle the continuous integration and continuous delivery. This means our application gets tested and deployed automatically, saving us time and reducing the chances of errors.
+  - Then, we bring in Jenkins to handle the continuous integration and continuous delivery. This means our application gets tested and deployed automatically, saving us time and 
+    reducing the chances of errors.
 
-To package our application neatly, we use Docker, which wraps it up in a container, making it easy to move around and deploy.
+   - To package our application neatly, we use Docker, which wraps it up in a container, making it easy to move around and deploy.
 
-We also care about code quality, so we've included SonarQube to assess and improve the overall quality of our code.
+   - We also care about code quality, so we've included SonarQube to assess and improve the overall quality of our code.
 
-Last but not least, we rely on OpenShift to manage and orchestrate our containers effectively.
+    - Last but not least, we rely on OpenShift to manage and orchestrate our containers effectively.
 
-By combining all these tools, we're aiming for a simple, automated process that not only speeds up deployment but also ensures our Java web application can scale smoothly and stay easy to manage on the OpenShift cluster.
+   - By combining all these tools, we're aiming for a simple, automated process that not only speeds up deployment but also ensures our Java web application can scale smoothly and stay 
+     easy to manage on the OpenShift cluster.
 
 
 
