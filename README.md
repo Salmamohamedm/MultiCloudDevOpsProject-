@@ -48,9 +48,9 @@
 1. [main.tf](Terraform-Project/main.tf)
    - Define the cloud provider, Call terraform modules.
 2. [variables.tf](Terraform-Project/main.tf)
-    -  Set variables that need to be defined in terraform.tfvar file.
+    -  Configure variables that need to be defined in terraform.tfvar file.
 3.   [terraform.tfvars](Terraform-Project/terraform.tfvars)
-     -  Define values for the needed variables.
+     - Provide values for the required variables
 4. [Remote/backand.tf](Terraform-Project/backend.tf)
     - Store Terraform state remotely using S3
   
