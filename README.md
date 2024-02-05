@@ -26,7 +26,7 @@
 
 
 
-Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and OpenShift.
+  - Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and OpenShift.
 #     Table of Contents
 
  - Prerequisites
