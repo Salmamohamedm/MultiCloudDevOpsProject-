@@ -46,13 +46,13 @@
   a detailed guide on deploying infrastructure using Terraform. This project involves the utilization of modular components, including VPC, Subnet, EC2, Internet Gateway, Security Group, and Route Table. The primary aim is to create a robust environment with essential network elements such as Subnet, Internet Gateway, and Route Table. Additionally, this deployment sets up an EC2 instance tailored for running Jenkins and SonarQube, accompanied by CloudWatch for comprehensive monitoring with configured alarms.
  #   overview 
 1. [main.tf](Terraform-Project/main.tf)
-   - Purpose: Define the cloud provider, Call terraform modules.
+   - Define the cloud provider, Call terraform modules.
 2. [variables.tf](Terraform-Project/main.tf)
-    - Purpose: Set variables that need to be defined in terraform.tfvar file.
+    -  Set variables that need to be defined in terraform.tfvar file.
 3.   [terraform.tfvars](Terraform-Project/terraform.tfvars)
-     - Purpose: Define values for the needed variables.
+     -  Define values for the needed variables.
 4. [Remote/backand.tf](Terraform-Project/backend.tf)
-    - Purpose: Store Terraform state remotely using S3
+    - Store Terraform state remotely using S3
   
 ![Screenshot (483)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/2c8e8cc8-0cc3-42df-b7c8-7bd3ae675caf)
 
