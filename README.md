@@ -35,7 +35,7 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
  - Monitoring and Logging OpenShift Cluster
 
 #   Prerequisites
-- Before you begin, ensure you have the following tools installed
+- Before diving in, make sure to have the essential tools installed and ready for action.
 - Terraform
 - Ansible
 - AWS CLI
