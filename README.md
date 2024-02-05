@@ -36,7 +36,6 @@
  - Monitoring and Logging OpenShift Cluster
 
 #   Prerequisites
-- Before diving in, make sure to have the essential tools installed and ready for action.
 - Terraform
 - Ansible
 - AWS CLI
