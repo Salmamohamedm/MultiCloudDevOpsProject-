@@ -31,7 +31,7 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
  - Infrastructure Provisioning with Terraform
  - Configuration Management with Ansible   
  - Jenkins Pipeline
- - OpenShift Deployment
+ - OpenShift 
  - Monitoring and Logging OpenShift Cluster
 
 #   Prerequisites
@@ -39,10 +39,10 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 - Terraform
 - Ansible
 - AWS CLI
-- OpenShift CLI "OC"
+- OpenShift CLI 
   
  #   Infrastructure Provisioning with Terraform
- This document provides comprehensive instructions for deploying infrastructure using Terraform. The project encompasses  modules: vpc, subnet, ec2, internetgetway, security group, route table . The objective is to establish an environment comprising network infrastructure with subnet, Internet Gateway, and route table an EC2 instance for running Jenkins and SonarQube, and CloudWatch for monitoring with alarms .
+  a detailed guide on deploying infrastructure using Terraform. This project involves the utilization of modular components, including VPC, Subnet, EC2, Internet Gateway, Security Group, and Route Table. The primary aim is to create a robust environment with essential network elements such as Subnet, Internet Gateway, and Route Table. Additionally, this deployment sets up an EC2 instance tailored for running Jenkins and SonarQube, accompanied by CloudWatch for comprehensive monitoring with configured alarms.
  #   overview 
 1. [main.tf](Terraform-Project/main.tf)
    - Purpose: Define the cloud provider, Call terraform modules.
@@ -56,7 +56,7 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 ![Screenshot (483)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/2c8e8cc8-0cc3-42df-b7c8-7bd3ae675caf)
 
 5. [VPC Module](Terraform-Project/modules/vpc)
-    - Purpose: Provision a Virtual Private Cloud (VPC)
+    
       
       ![Screenshot (393)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/8e78d5bc-31c4-4b10-951f-e0a36a27ee9c)
       ![Screenshot (394)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/e32ba505-1c5b-4b28-823a-93232a4a0ef0)
@@ -109,7 +109,7 @@ Tools: Bash scripting, AWS,  Terraform, Ansible, Docker, Jenkins, SonarQube and 
 
 
 #   Configuration Management with Ansible 
-This Ansible playbook automates the deployment and configuration of Jenkins, SonarQube, and Docker on an EC2 instance. The playbook uses dynamic inventory for seamless integration with cloud environments.
+Unveiling an Ansible playbook that orchestrates the enchanting deployment and configuration of Jenkins, SonarQube, and Docker on your EC2 instance. Harnessing the power of dynamic inventory, this playbook seamlessly integrates with cloud environments .
 
 #   Overview
   - [Jenkins Role:](ansible_project/Jenkins/tasks)
@@ -167,8 +167,7 @@ ansible-playbook -i inventory your_playbook.yml
 ![Screenshot (465)](https://github.com/Salmamohamedm/MultiCloudDevOpsProject-/assets/109488469/9c880287-dcff-4b2e-92db-2628301476fb)
 
 #   Jenkins Pipeline
-This document aims to provide a straightforward overview of how to use Ansible to automate the installation and configuration of Jenkins, SonarQube, and Docker on an EC2 instance. By following these steps, you can streamline the process of getting these tools up and running efficiently.
-
+Embark on a straightforward journey as this document guides you through leveraging Ansible to effortlessly automate the installation and configuration of Jenkins, SonarQube, and Docker on your EC2 instance. These steps are designed to streamline the process, ensuring a swift and efficient setup of these essential tools.
 #   overview
 
   1. Create Shared Library Repository:
@@ -208,7 +207,7 @@ In the "SonarQube Servers" section, add your SonarQube server details.
 
 
 
-#  OpenShift Deployment
+#  OpenShift 
 the deployment of a Java web application on OpenShift, highlighting a streamlined process that covers essential aspects such as deployment configuration for seamless scalability, the creation of an internal service to foster communication within the cluster, implementation of network policies to bolster security, configuration of routes for external accessibility.
 
 
